@@ -257,7 +257,7 @@ The definitive standard of SDDA is automated mechanical enforcement and empirica
 * [`BENCHMARK.md`](BENCHMARK.md): Formal scientific protocol, null hypotheses ($H_0$), and longitudinal twin experiment for architectural falsification.
 * [`rules/ast-linters/`](rules/): AST rules rejecting I/O, network imports, ambient system clocks, and singleton state inside core domain directories.
 * [`templates/`](templates/): Drop-in agent instruction profiles (`AGENTS.md`, editor rule templates).
-* [`rfc/`](rfc/): Language-specific adapter RFCs for ecosystems lacking native algebraic sum types.
+* [`rfc/`](rfc/): Formal Requests for Comments—including the foundational core specification RFC, runtime conformance profiles (Go, PHP, Java), and architectural extensions (Sagas, Event Sourcing).
 
 ---
 
