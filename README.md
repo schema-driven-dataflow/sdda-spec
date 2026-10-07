@@ -62,9 +62,12 @@ SDDA is grounded on an explicitly testable software engineering proposition:
 
 > **The Agent Ergonomics Hypothesis:**  
 > In codebases where autonomous AI agents perform feature additions, refactoring, and bug fixes, architectures that enforce **zero-indirection dataflow**, **referentially transparent domain logic**, **narrow context projections**, and **machine-checkable schema boundaries** will achieve:
-> 1. Significantly lower multi-file retrieval failure rates during upstream context acquisition.
-> 2. Fewer failed test-and-repair iterations during code synthesis.
-> 3. Lower inference token expenditures per completed backlog task compared to deep object-oriented class hierarchies.
+> 
+> 1. **Operational Efficiency (H1):** Lower multi-file retrieval failure rates, fewer failed repair iterations, and lower inference token expenditure per task compared to deep object-oriented class hierarchies.
+> 2. **Longitudinal Architectural Stability (H2):** Bounded architectural drift over 50–100 consecutive unassisted maintenance tasks, preventing the progressive degradation of boundaries, leaked I/O, and ad-hoc abstractions typical of unconstrained agent edits.
+> 3. **Mechanical Constraint Convergence (H3):** Autonomous self-repair back to valid architectural boundaries driven deterministically by AST linter errors in CI, without human intervention or custom prompt tuning.
+>
+> *For the formal experimental design, null hypotheses ($H_0$), and metric definitions, see [**`BENCHMARK.md`**](BENCHMARK.md).*
 
 ---
 
@@ -250,12 +253,11 @@ SDDA delivers distinct advantages across three separate domains:
 
 The definitive standard of SDDA is automated mechanical enforcement and empirical verification:
 
+* [`spec.md`](spec.md): Complete normative specification with formal RFC 2119 clauses.
+* [`BENCHMARK.md`](BENCHMARK.md): Formal scientific protocol, null hypotheses ($H_0$), and longitudinal twin experiment for architectural falsification.
 * [`rules/ast-linters/`](rules/): AST rules rejecting I/O, network imports, ambient system clocks, and singleton state inside core domain directories.
 * [`templates/`](templates/): Drop-in agent instruction profiles (`AGENTS.md`, editor rule templates).
-* **The Empirical Benchmark Suite:** A controlled, head-to-head evaluation implementing identical requirements in conventional enterprise OOP vs. SDDA to measure:
-  * Time-to-green and regression rates across autonomous agents.
-  * Files inspected vs. files edited per feature backlog item.
-  * Inference token expenditure and failed test-repair iterations.
+* [`rfc/`](rfc/): Language-specific adapter RFCs for ecosystems lacking native algebraic sum types.
 
 ---
 
